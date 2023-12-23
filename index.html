@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <div class=Header>
+        <h1 id="title"> Survey Form</h1>
+        <p id="description">
+            Let us know which programming language you prefer
+        </p>
+    </div>
+    <div>
+    <form id="survey-form" method="GET" >
+        <div class="field">
+            <div class="label">
+                <label id="name-label" for="name">*Name:</label>
+            </div>
+            <div class="textinput">
+                <input type="text" id="name" name="name" placeholder="Enter your name required" required> <br>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label id="email-label" for="email"> *Email: </label>
+            </div>
+            <div class="textinput">
+                <input type="email" id="email" name="email" placeholder="Enter your email required" required><br></div>
+        </div>
+        <div class="field">
+                <div class="label">
+                    <label id="number-label" for="age">*Age: </label>
+                </div>
+            <div class="textinput">
+            <input type="number" id="number" min="1" max="100" name="age" placeholder="Age required" required><br>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label>*Preferred Programming Language:</label>
+            </div>
+            <select id="dropdown">
+                <option selected="selected" disabled value> Select an option </option>
+                <option value="Java">Java </option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="C++">C++</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Python">Python</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Swift">Swift</option>
+                <option value="Other">Other</option>   
+            </select>
+        </div>
+        <div class="field">
+            <div class="label">
+                <label for="yearsExperience">How many years of coding experience?</label></div>
+            <div class="radio">
+            <ul style="list-style: none;">
+                <li class="radio"><label><input type="radio" id="experience-label" name="radio-buttons" value=0 class="yearsExperience"> Less than a year</label></li>
+                <li class="radio"><label><input type="radio" id="experience-label" name="radio-buttons" value=1 class="yearsExperience"> 1-2 years</label></li>
+                <li class="radio"> <label> <input type="radio"  id="experience-label" name="radio-buttons" value=2 class="yearsExperience"> 3-5 years</label></li>
+                <li class="radio">  <label> <input type="radio" id="experience-label" name="radio-buttons" value=3 class="yearsExperience"> 6-10 years</label></li>
+                <li class="radio"><label> <input type="radio" id="experience-label" name="radio-buttons" value=4 class="yearsExperience"> 11-20 years</label></li>
+                <li class="radio"><label> <input type="radio" id="experience-label" name="radio-buttons" value=5 class="yearsExperience"> 20+ years</label></li>
+             </ul> 
+            </div>                 
+        </div>
+        <div class="field">
+            <div class="label"><label for="availability">When are you available?</label></div>
+            <div class="checkbox">
+                <ul style="list-style: none;">
+                <li class="checkbox"><input type="checkbox" name="availability" value="Monday" > Monday</li> 
+                <li class="checkbox"><input type="checkbox" name="availability" value="Tuesday" > Tuesday</li> 
+                <li class="checkbox"><input type="checkbox" name="availability" value="Wednesday" > Wednesday</li> 
+                <li class="checkbox"><input type="checkbox" name="availability" value="Thursday" > Thursday</li> 
+                <li class="checkbox"><input type="checkbox" name="availability" value="Friday" > Friday</li> 
+                </ul></div>
+        </div>
+        <div class="field">
+            <div class=label><label for="comments">Comments: </label></div>
+                <div class="textinput">
+                    <textarea id="comments" name="comments" placeholder="Write down any additional information about yourself"></textarea><br>
+                </div>
+        </div>
+        <button id="submit" type="submit" >Submit</button>
+
+    </form>
+</div>
+
+
+
+</html>
